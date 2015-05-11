@@ -1,0 +1,290 @@
+body
+{
+  background-color: skyblue;
+}
+h1, h2, h3
+{
+  color: black;
+}
+p
+{
+  color: black;
+}
+.mainpicture
+{
+  margin-left: 245px;
+  text-align: center;
+  height: 325px;
+  width: 325px;
+
+}
+.jumbotron
+{
+  text-align: center;
+  height: 300px;
+  margin: 0 auto;
+  width: 75%;
+}
+.caption
+{
+  text-align: center;
+  margin-left: 20px;
+}
+.sidebar
+{
+  border-style: solid;
+  border-color: white;
+  background-color: grey;
+  height: 400px;
+  float: left;
+  width: 175px;
+  margin-left: 0px;
+  border-radius: 25px;
+}
+.home
+{
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin-top: 0px;
+  border-radius: 25px;
+}
+.musichome
+{
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin-top: 0px;
+  border-radius: 25px;
+}
+.bottombar
+{
+  position: relative;
+  background-color: grey;
+  height: 150px;
+  width: 100%;
+  bottom: 0;
+  /*left: 0;*/
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-radius: 25px;
+}
+li
+{
+  list-style: none;
+  height: 75px;
+  display: vertical;
+  margin-right: 25px;
+  color: black;
+}
+nav
+{
+  display: block;
+}
+a
+{
+  text-decoration:none;
+  color: black;
+}
+.picture1
+{
+  margin-right: 165px;
+  text-align: center;
+}
+.pic1
+{
+  width: 250px;
+  height:400px;
+}
+.captioncello
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.pic2
+{
+  width: 250px;
+  height:400px;
+}
+.captionpiano
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.pic3
+{
+  width: 250px;
+  height:400px;
+}
+.captionvocals
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.instruments
+{
+  text-align: center;
+}
+.lessons
+{
+  text-align: center;
+}
+.rate1
+{
+  list-style: none;
+  text-align: center;
+}
+.rate2
+{
+  list-style: none;
+  text-align: center;
+}
+.aboutlessons
+{
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+.aboutlocations
+{
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+.abouttimes
+{
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+.aboutspots
+{
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+.playbutton
+{
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+.playbutton2
+{
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+.playbutton3
+{
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+.favoritepiececello
+{
+  display: inline-block;
+}
+.favoritepiecepiano
+{
+  display: inline-block;
+}
+.favoritepiecevocal
+{
+  display: inline-block;
+}
+.stopbutton
+{
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-left: 2px;
+}
+.stopbutton2
+{
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-left: 2px;
+}
+.stopbutton3
+{
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-left: 2px;
+}
+.contact
+{
+  margin-bottom: 0px;
+}
+.cellphone
+{
+  display: inline-block;
+  height: -15px;
+  margin-top: 0px;
+  padding-right: 20px;
+
+}
+.email
+{
+  display: inline-block;
+  height: -15px;
+  margin-top: 0px;
+  padding-right: 20px;
+}
+.facebookimage
+{
+  height: 30px;
+  width: 30px;
+  margin-top: 0px;
+  padding-right: 20px;
+}
+.twitterimage
+{
+  height: 30px;
+  width: 30px;
+  margin-top: 0px;
+  padding-right: 20px;
+}
+.githubimage
+{
+  height: 30px;
+  width: 30px;
+  margin-top: 0px;
+}
+.copyright
+{
+  text-align: right;
+  margin-top: 0px;
+}
+.contactclass
+{
+  text-align: left;
+  margin-left: 10px;
+  padding-top: 1.5px;
+}
+.copyright
+{
+  margin: 0;
+  bottom: 0;
+  margin-right: 10px;
+}
+.contactimages
+{
+  text-align: center;
+}
+.courseworkhome
+{
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin-top: 0px;
+  border-radius: 25px;
+}
+.neuquacenter
+{
+  margin-right: 165px;
+  text-align: center;
+}
