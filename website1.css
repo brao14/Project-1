@@ -12,7 +12,7 @@ p
 }
 .mainpicture
 {
-  margin-left: 245px;
+  margin-left: 300px;
   text-align: center;
   height: 325px;
   width: 325px;
@@ -287,4 +287,105 @@ a
 {
   margin-right: 165px;
   text-align: center;
+}
+.coursework
+{
+  text-align: center;
+  margin-right: 120px;
+}
+.math
+{
+  display: inline-block;
+  padding-right: 30px;
+  vertical-align: top;
+
+}
+.science
+{
+  display: inline-block;
+  vertical-align: top;
+}
+.engineering
+{
+  display: inline-block;
+  padding-left: 30px;
+  vertical-align: top;
+}
+.mathheading
+{
+  display: inline-block;
+}
+.sciheading
+{
+  display: inline-block;
+}
+.engheading
+{
+  display: inline-block;
+}
+.clubs
+{
+  text-align: center;
+}
+.captionclub
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.sports
+{
+  text-align: center;
+}
+.work
+{
+  text-align: center;
+}
+.languageshome
+{
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin-top: 0px;
+  border-radius: 25px;
+}
+.bharatlovesprogramming
+{
+  margin-right: 165px;
+  text-align: center;
+}
+.program
+{
+  height: 400px;
+  width: 700px;
+}
+.programminglanguages
+{
+  text-align: center;
+  display: inline-block;
+  margin-right: 40px;
+  text-align: top;
+  vertical-align: top;
+
+}
+.scriptinglanguages
+{
+  text-align: center;
+  display: inline-block;
+
+  vertical-align: top;
+
+}
+.applications
+{
+  text-align: center;
+  display: inline-block;
+  margin-left: 40px;
+  vertical-align: top;
+}
+.operatingsystems
+{
+  text-align: center;
+  display: inline-block;
+  margin-left: 40px;
+  vertical-align: top;
 }
