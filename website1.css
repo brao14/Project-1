@@ -10,13 +10,16 @@ p
 {
   color: black;
 }
+.hub
+{
+  margin-right: 165px;
+  text-align: center;
+
+}
 .mainpicture
 {
-  margin-left: 300px;
-  text-align: center;
   height: 325px;
   width: 325px;
-
 }
 .jumbotron
 {
