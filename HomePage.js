@@ -33,6 +33,19 @@ $(document).ready(function() {
        });
    });
  });
+ $(document).ready(function(){
+     // to fade in on page load
+     $("body").css("display", "none");
+     $("body").fadeIn(400);
+     // to fade out before redirect
+     $('a').click(function(e){
+         redirect = $(this).attr('href');
+         e.preventDefault();
+         $('body').fadeOut(400, function(){
+             document.location.href = redirect
+         });
+     });
+ })
 
 var audio = new Audio('LaloCelloConcerto.mp3');
 var audio1 = new Audio('UnitedStatesOfEurasia.mp3');
