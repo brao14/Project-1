@@ -135,16 +135,43 @@ a
 {
   text-align: left;
 }
+.instrumentsheading
+{
+  diplay: inline-block;
+}
+.instrumentsdropdown
+{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+.instrumentscontent
+{
+  display: none;
+}
 .lessons
 {
   text-align: left;
+}
+.lessonsheader
+{
+  display: inline-block;
+}
+.lessonsdropdown
+{
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+}
+.lessonscontent
+{
+  display: none;
 }
 .rate1
 {
   list-style: none;
   text-align: left;
   margin-left: 100px;
-
 }
 .rate2
 {
@@ -352,6 +379,20 @@ a
 {
   text-align: left;
 }
+.clubheading
+{
+  display: inline-block;
+}
+.clubdropdown
+{
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+}
+.clubscontent
+{
+  display: none;
+}
 .captionclub
 {
   margin-left: 100px;
@@ -361,9 +402,38 @@ a
 {
   text-align: left;
 }
+.sportsheading
+{
+  display: inline-block;
+}
+.sportsdropdown
+{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+.sportscontent
+{
+  display: none;
+}
 .work
 {
   text-align: left;
+}
+.workheading
+{
+  display: inline-block;
+}
+.workdropdown
+{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
+.workcontent
+{
+  display: none;
 }
 .languageshome
 {

@@ -46,6 +46,31 @@ $(document).ready(function() {
          });
      });
  })
+ $(document).ready(function(){
+   $('.clubdropdown').click(function(){
+     $('.clubscontent').slideToggle("slow")
+   });
+ });
+ $(document).ready(function(){
+   $('.sportsdropdown').click(function(){
+     $('.sportscontent').slideToggle("slow")
+   });
+ });
+ $(document).ready(function(){
+   $('.workdropdown').click(function(){
+     $('.workcontent').slideToggle("slow")
+   });
+ });
+ $(document).ready(function(){
+   $('.instrumentsdropdown').click(function(){
+     $('.instrumentscontent').slideToggle("slow")
+   });
+ });
+ $(document).ready(function(){
+   $('.lessonsdropdown').click(function(){
+     $('.lessonscontent').slideToggle("slow")
+   });
+ });
 
 var audio = new Audio('LaloCelloConcerto.mp3');
 var audio1 = new Audio('UnitedStatesOfEurasia.mp3');
