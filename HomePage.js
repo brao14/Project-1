@@ -9,9 +9,6 @@ $(document).ready(function() {
            height: '-=10px'
        });
    });
- });
-
- $(document).ready(function() {
    $('a').mouseenter(function() {
        $(this).css({
            "color":"pink"
@@ -32,9 +29,7 @@ $(document).ready(function() {
             height: '-=10px'
        });
    });
- });
- $(document).ready(function(){
-     // to fade in on page load
+  // to fade in on page load
      $("body").css("display", "none");
      $("body").fadeIn(400);
      // to fade out before redirect
@@ -45,32 +40,30 @@ $(document).ready(function() {
              document.location.href = redirect
          });
      });
- })
- $(document).ready(function(){
-   $('.clubdropdown').click(function(){
-     $('.clubscontent').slideToggle("slow")
-   });
- });
- $(document).ready(function(){
-   $('.sportsdropdown').click(function(){
-     $('.sportscontent').slideToggle("slow")
-   });
- });
- $(document).ready(function(){
-   $('.workdropdown').click(function(){
-     $('.workcontent').slideToggle("slow")
-   });
- });
- $(document).ready(function(){
-   $('.instrumentsdropdown').click(function(){
-     $('.instrumentscontent').slideToggle("slow")
-   });
- });
- $(document).ready(function(){
-   $('.lessonsdropdown').click(function(){
-     $('.lessonscontent').slideToggle("slow")
-   });
- });
+    $('.interest-dropdown').click(function(e){
+     $(e.currentTarget).parent().next().slideToggle("slow");
+    });
+});
+ // $(document).ready(function(){
+ //   $('.sportsdropdown').click(function(){
+ //     $('.sportscontent').slideToggle("slow")
+ //   });
+ // });
+ // $(document).ready(function(){
+ //   $('.workdropdown').click(function(){
+ //     $('.workcontent').slideToggle("slow")
+ //   });
+ // });
+ // $(document).ready(function(){
+ //   $('.instrumentsdropdown').click(function(){
+ //     $('.instrumentscontent').slideToggle("slow")
+ //   });
+ // });
+ // $(document).ready(function(){
+ //   $('.lessonsdropdown').click(function(){
+ //     $('.lessonscontent').slideToggle("slow")
+ //   });
+ // });
 
 var audio = new Audio('LaloCelloConcerto.mp3');
 var audio1 = new Audio('UnitedStatesOfEurasia.mp3');

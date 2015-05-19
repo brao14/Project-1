@@ -134,7 +134,20 @@ a
   margin-left: 100px;
   margin-right: 100px;
 }
-.instruments
+.interest-header{
+  text-align: left;
+}
+.interest-heading, .interest-dropdown{
+  display: inline-block;
+}
+.interest-dropdown{
+  width: 15px;
+  height: 15px;
+}
+.interest-content{
+  display: none;
+}
+/*.instruments
 {
   text-align: left;
 }
@@ -169,7 +182,7 @@ a
 .lessonscontent
 {
   display: none;
-}
+}*/
 .rate1
 {
   list-style: none;
@@ -401,7 +414,7 @@ a
   margin-left: 100px;
   margin-right: 100px;
 }
-.sports
+/*.sports
 {
   text-align: left;
 }
@@ -418,8 +431,8 @@ a
 .sportscontent
 {
   display: none;
-}
-.work
+}*/
+/*.work
 {
   text-align: left;
 }
@@ -437,7 +450,7 @@ a
 .workcontent
 {
   display: none;
-}
+}*/
 .languageshome
 {
   height: 100px;
