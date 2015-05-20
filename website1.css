@@ -81,7 +81,7 @@ p
   border-color: black;
   */
   border-radius: 25px;
-  margin-top: 40px;
+  margin-top: 50px;
 
 }
 li
@@ -136,6 +136,20 @@ a
   margin-left: 100px;
   margin-right: 450px;
 }
+/*.interest-header{
+  text-align: left;
+}
+.interest-heading, .interest-dropdown{
+  display: inline-block;
+}
+.interest-dropdown{
+  width: 15px;
+  height: 15px;
+}
+.interest-content{
+  display: none;
+}
+*/
 .instruments
 {
     text-align: left;
@@ -493,9 +507,7 @@ a
 {
   text-align: left;
   display: inline-block;
-
   vertical-align: top;
-
 }
 .applications
 {

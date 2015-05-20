@@ -9,9 +9,6 @@ $(document).ready(function() {
            height: '-=10px'
        });
    });
- });
-
- $(document).ready(function() {
    $('a').mouseenter(function() {
        $(this).css({
            "color":"hotpink"
@@ -32,9 +29,7 @@ $(document).ready(function() {
             height: '-=10px'
        });
    });
- });
- $(document).ready(function(){
-     // to fade in on page load
+  // to fade in on page load
      $("body").css("display", "none");
      $("body").fadeIn(400);
      // to fade out before redirect
@@ -76,6 +71,9 @@ $(document).ready(function() {
      $('.courseworkcontent').slideToggle("slow")
    });
  });
+
+
+
 
 var audio = new Audio('LaloCelloConcerto.mp3');
 var audio1 = new Audio('UnitedStatesOfEurasia.mp3');
