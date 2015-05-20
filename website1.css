@@ -1,6 +1,6 @@
 body
 {
-  background-color: white;
+  background-color: #E8E6DA	;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 12px;
 }
@@ -42,9 +42,9 @@ p
 */
 .sidebar
 {
-  border-style: solid;
-  border-color: white;
-  background-color: grey;
+  /*border-style: solid;
+  border-color: black; */
+  background-color: #CCCEA9;
   height: 400px;
   float: left;
   width: 175px;
@@ -71,15 +71,17 @@ p
 .bottombar
 {
   position: relative;
-  background-color: grey;
+  background-color: #CCCEA9;
   height: 150px;
   width: 100%;
   bottom: 0;
   /*left: 0;*/
   text-align: center;
-  border-style: solid;
-  border-color: white;
+  /*border-style: solid;
+  border-color: black;
+  */
   border-radius: 25px;
+  margin-top: 40px;
 
 }
 li
@@ -112,7 +114,7 @@ a
 .captioncello
 {
   margin-left: 100px;
-  margin-right: 100px;
+  margin-right: 450px;
 }
 .pic2
 {
@@ -122,7 +124,7 @@ a
 .captionpiano
 {
   margin-left: 100px;
-  margin-right: 100px;
+  margin-right: 450px;
 }
 .pic3
 {
@@ -132,15 +134,15 @@ a
 .captionvocals
 {
   margin-left: 100px;
-  margin-right: 100px;
+  margin-right: 450px;
 }
 .instruments
 {
-  text-align: left;
+    text-align: left;
 }
 .instrumentsheading
 {
-  diplay: inline-block;
+  display: inline-block;
 }
 .instrumentsdropdown
 {
@@ -156,7 +158,7 @@ a
 {
   text-align: left;
 }
-.lessonsheader
+.lessonsheading
 {
   display: inline-block;
 }
@@ -185,25 +187,25 @@ a
 .aboutlessons
 {
   margin-left: 100px;
-  margin-right: 100px;
+  margin-right: 450px;
   text-align: left;
 }
 .aboutlocations
 {
   margin-left: 100px;
-  margin-right: 100px;
+  margin-right: 450px;
   text-align: left;
 }
 .abouttimes
 {
   margin-left: 100px;
-  margin-right: 100px;
+  margin-right: 450px;
   text-align: left;
 }
 .aboutspots
 {
   margin-left: 100px;
-  margin-right: 100px;
+  margin-right: 450px;
   text-align: left;
 }
 .playbutton
@@ -339,11 +341,33 @@ a
   margin-right: 165px;
   text-align: center;
 }
+.neuqua
+{
+  width: 700px;
+  height: 400px;
+}
 .coursework
 {
-  text-align: center;
-  margin-right: 40px;
+  margin-top: 50px;
+  text-align: left;
 }
+.courseworkcontent
+{
+  display: none;
+  margin-left: 100px;
+}
+.courseworkheading
+{
+  display: inline-block;
+  text-align: left;
+}
+.courseworkdropdown
+{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
 .math
 {
   display: inline-block;
@@ -399,7 +423,7 @@ a
 .captionclub
 {
   margin-left: 100px;
-  margin-right: 100px;
+  margin-right: 450px;
 }
 .sports
 {
@@ -490,6 +514,6 @@ a
 .skills
 {
   text-align: center;
-  margin-right: 165px;
+  margin-right: 0;
 
 }

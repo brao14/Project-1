@@ -14,7 +14,7 @@ $(document).ready(function() {
  $(document).ready(function() {
    $('a').mouseenter(function() {
        $(this).css({
-           "color":"pink"
+           "color":"hotpink"
        });
     });
    $('li').mouseenter(function(){
@@ -69,6 +69,11 @@ $(document).ready(function() {
  $(document).ready(function(){
    $('.lessonsdropdown').click(function(){
      $('.lessonscontent').slideToggle("slow")
+   });
+ });
+ $(document).ready(function(){
+   $('.courseworkdropdown').click(function(){
+     $('.courseworkcontent').slideToggle("slow")
    });
  });
 
