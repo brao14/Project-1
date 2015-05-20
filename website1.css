@@ -360,6 +360,8 @@ a
   width: 700px;
   height: 400px;
 }
+
+
 .coursework
 {
   margin-top: 50px;
@@ -368,12 +370,11 @@ a
 .courseworkcontent
 {
   display: none;
-  margin-left: 100px;
+
 }
 .courseworkheading
 {
   display: inline-block;
-  text-align: left;
 }
 .courseworkdropdown
 {
@@ -460,10 +461,12 @@ a
 .work
 {
   text-align: left;
+
 }
 .workheading
 {
   display: inline-block;
+
 }
 .workdropdown
 {
