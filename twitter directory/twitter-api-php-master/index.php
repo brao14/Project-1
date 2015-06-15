@@ -1,13 +1,15 @@
 <?php
+header('Content-Type: application.json');
+header('Access-Control-Allow-Origin: http://bharatrao.herokuapp.com');
 ini_set('display_errors', 1);
 require_once('TwitterAPIExchange.php');
 
 /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
 $settings = array(
-    'oauth_access_token' => "",
-    'oauth_access_token_secret' => "",
-    'consumer_key' => "",
-    'consumer_secret' => ""
+    'oauth_access_token' => "448642049-WCSocyo4mAL2cRnCJdEv0vJAts9FGx9IozRU6z6H",
+    'oauth_access_token_secret' => "xy0DccFAkfyBQy8WX8VL4txok8rcdlV43ZnGlEleGo6MB",
+    'consumer_key' => "XLBkWmMkhrcllKEZIyGnKPbJJ",
+    'consumer_secret' => "EtsltFAzRFNafTsTnVWGwbSjnIbgCry7ostvWAJiNIbZ8sAscO"
 );
 
 /** URL for REST request, see: https://dev.twitter.com/docs/api/1.1/ **/
@@ -16,7 +18,7 @@ $requestMethod = 'POST';
 
 /** POST fields required by the URL above. See relevant docs as above **/
 $postfields = array(
-    'screen_name' => 'usernameToBlock', 
+    'screen_name' => 'usernameToBlock',
     'skip_status' => '1'
 );
 
