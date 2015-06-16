@@ -1,0 +1,42 @@
+
+<html>
+  <head>
+    <title>TwitterAPI</title>
+    <script>
+  var host_prefix = "http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=Chilly%20on%20the%20first%20day%20of%20summer%20in%20the%20bay%20area"
+  var url = host_prefix + '/jsonp?callback=?';
+
+  var xhr=new XMLHttpRequest();
+
+  console.log("created a xmlhhtprequest object");
+  xhr.open("GET",url,true);
+  xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+  xhr.send();
+
+console.log("Status", xhr.status);
+console.log("Status text", xhr.statusText);
+
+xhr.onreadystatechange = function()
+{
+  if (xhr.readyState != 4) return; // Not there yet
+  if (xhr.status != 200)
+  {
+    // Handle request failure here...
+    return;
+  }
+  // Request successful, read the response
+  var resp = xhr.responseText;
+  // ... and use it as needed by your app.
+  json = JSON.parse(resp);
+  console.log("json")
+
+}
+</script>
+  </head>
+  <body>
+    <div id="tt_main">
+      <p>"Hello, this is a XHR test of TipTop"</p>
+    </div>
+  </body>
+</html>
