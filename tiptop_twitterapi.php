@@ -23,5 +23,6 @@ if ($response_code <> 200) {
  error_log("Bharat: Response code is not 200");
 }
 
+error_log("Bharat: $reponse_code");
 print_r($response_data);
 ?>
