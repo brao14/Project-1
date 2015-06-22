@@ -1,25 +1,44 @@
-
 <html>
   <head>
     <title>TipTopAPI</title>
-    <script>
-      var json = '{
-        "topics": [
-          {
-            "bay area": 50
-          }
-        ],
-        "tweet": "Chilly on the first day of summer in the bay area"
-        }',
-        obj = JSON.parse(json);
+  </head>
+  <body>
+    <div id="tt_main">
+      <p>"Hello, this is a test of the TipTop API call using Javascript and XHR"</p>
 
-      alert(obj.count);
+    </div>
+    <script>
+      //var json = '{"bayarea": "50", "tweet": "Chilly on the first day of summer in the bay area"}'
+      var json = '{"items" : [{"tweet" : "Obama is the president of the United States", "topic" : [ {"Obama" : "50"}, {"President" : "100"} ] }, {"tweet" : "Chilly in the Bay Area", "topic" : [ {"BayArea" : "50"}, {"Weather" : "100"} ] }]}'
+      var noob = JSON.parse(json);
+      //document.getElementById("tweet").innerHTML = noob.items[1].topic[1].Weather;
+      console.log("Number of tweets: ", noob.items.length);
+      var count=0;
+      var table = "<table style=\"width:100%\">"
+
+      for (count=0; count<noob.items.length; count++)
+      {
+        table += "<tr><td>" + noob.items[count].tweet + "</td>";
+        for (count1=0; count1<noob.items[count].topic.length; count1++)
+        {
+          for (var propertyName in noob.items[count].topic[count1])
+          {
+            table += "<td>" + propertyName + ":" + noob.items[count].[propertyName] + "</td>";
+          }
+        }
+        table += "</tr>";
+        //document.getElementById("tweets").innerHTML = myRows;
+      //  document.getElementById("tt_main").innerHTML = myHTML;
+      }
+      table += "</table>";
+      document.getElementById("tt_main").innerHTML = table;
+
       Origin : "http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=Chilly%20on%20the%20first%20day%20of%20summer%20in%20the%20bay%20area"
       var url = "http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=Chilly%20on%20the%20first%20day%20of%20summer%20in%20the%20bay%20area"
       var xhr=new XMLHttpRequest();
 
       console.log("created a xmlhhtprequest object");
-      xhr.open("GET",url,true);
+      xhr.open("GET","ajax_info.php",true);
       xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
       xhr.send();
@@ -47,10 +66,6 @@
         console.log("json")
       }
     </script>
-  </head>
-  <body>
-    <div id="tt_main">
-      <p>"Hello, this is a test of the TipTop API call using Javascript and XHR"</p>
-    </div>
   </body>
+
 </html>
