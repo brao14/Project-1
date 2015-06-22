@@ -17,6 +17,8 @@ $response_code=$connection->response['code'];
 
 $response_data = json_decode($connection->response['response'],true);
 
+$response_rawdata = $connection->response['response'];
+
 
 if ($response_code <> 200) {
  print "Error: $response_code\n";
@@ -24,5 +26,7 @@ if ($response_code <> 200) {
 }
 
 error_log("Bharat: $response_code");
+print_r($response_rawdata);
+error_log("Bharat: $response_rawdata");
 print_r($response_data);
 ?>
