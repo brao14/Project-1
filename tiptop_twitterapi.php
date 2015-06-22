@@ -20,6 +20,7 @@ $response_data = json_decode($connection->response['response'],true);
 
 if ($response_code <> 200) {
  print "Error: $response_code\n";
+ error_log("Bharat: Response code is not 200");
 }
 
 print_r($response_data);
