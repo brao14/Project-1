@@ -1,3 +1,4 @@
+<DOCTYPE HTML>
 <html>
   <head>
     <title>TipTopAPI</title>
@@ -5,7 +6,6 @@
   <body>
     <div id="tt_main">
       <p>"Hello, this is a test of the TipTop API call using Javascript and XHR"</p>
-
     </div>
     <script>
       //var json = '{"bayarea": "50", "tweet": "Chilly on the first day of summer in the bay area"}'
@@ -33,13 +33,13 @@
       table += "</table>";
       document.getElementById("tt_main").innerHTML = table;
 
-      Origin : "http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=Chilly%20on%20the%20first%20day%20of%20summer%20in%20the%20bay%20area"
+      /*Origin : "http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=Chilly%20on%20the%20first%20day%20of%20summer%20in%20the%20bay%20area"
       var url = "http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=Chilly%20on%20the%20first%20day%20of%20summer%20in%20the%20bay%20area"
       var xhr=new XMLHttpRequest();
 
       console.log("created a xmlhhtprequest object");
-      xhr.open("GET","ajax_info.php",true);
-      xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xhr.open("GET","url",true);
+      xhr.setRequestHeader("Content-Type", "application/json");
 
       xhr.send();
 
@@ -65,6 +65,7 @@
         json = JSON.parse(resp);
         console.log("json")
       }
+      */
     </script>
   </body>
 
