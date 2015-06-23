@@ -33,7 +33,7 @@ print_r($response_data);
 $tweetvariable="Chilly%20on%20the%20first%20day%20of%20summer%20in%20the%20bay%20area";
 $curl = curl_init("http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=" + $tweetvariable);
 $result = curl_exec($curl);
-curl_close($tweet);
+curl_close($curl);
 print $result;
 
 
