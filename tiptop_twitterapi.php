@@ -1,6 +1,6 @@
 <?php
 
-require 'app_tokens.php';
+/*require 'app_tokens.php';
 require 'tmhOAuth.php';
 
 $connection = new tmhOAuth(array(
@@ -29,4 +29,12 @@ error_log("Bharat: $response_code");
 print_r($response_rawdata);
 error_log("Bharat: $response_rawdata");
 print_r($response_data);
+*/
+
+$curl = curl_init("http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=Chilly%20on%20the%20first%20day%20of%20summer%20in%20the%20bay%20area");
+$result = curl_exec($curl);
+curl_close($curl);
+print $result;
+
+
 ?>
