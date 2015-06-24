@@ -37,6 +37,6 @@ $result = curl_exec($curl);
 curl_close($curl);
 print $result;
 $jsonresult = json_decode($result->response['response'], true);
-exit;
+exit("This doesn't work");
 
 ?>

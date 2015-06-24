@@ -15,10 +15,7 @@
       var xhr=new XMLHttpRequest();
 
       console.log("created a xmlhhtprequest object");
-      xhr.open("GET","tiptop_twitterapi.php",true);
-      xhr.setRequestHeader("Content-Type", "application/json");
 
-      xhr.send();
 
       console.log("Status", xhr.status);
       console.log("Status text", xhr.statusText);
@@ -66,7 +63,11 @@
         table += "</table>";
         document.getElementById("tt_main").innerHTML = table;
         console.log("json")
-      }
+    }
+    xhr.open("GET","tiptop_twitterapi.php",true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.send();
     </script>
   </body>
 
