@@ -36,7 +36,6 @@ $curl = curl_init("http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/an
 $result = curl_exec($curl);
 curl_close($curl);
 print $result;
-$jsonresult = json_decode($result->response['response'], true);
-exit("This doesn't work");
+//$jsonresult = json_decode($result->response['response'], false);
 
 ?>
