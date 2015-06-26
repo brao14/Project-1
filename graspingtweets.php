@@ -9,7 +9,7 @@ $connection = new tmhOAuth(array(
   'user_secret' => $user_secret
 ));
 
-$connection->request('GET', $connection->url('1.1/users/show'), array('screen_name' => 'washingtonpost'));
+$connection->request('GET', $connection->url('1.1/search/tweets'), array('screen_name' => 'washingtonpost'));
 
 $response_code=$connection->response['code'];
 
