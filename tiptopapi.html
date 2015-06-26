@@ -4,14 +4,41 @@
     <title>TipTopAPI</title>
   </head>
   <body>
+    <form name="myTweets" action="tiptop_twitterapi.php" method="GET">
+      Please enter a tweet below: <br>
+      <input type="text" name="tweet">
+    </br>
+    <input type="submit" value="Submit">
+  </form>
+
     <div id="tt_main">
       <p>"Hello, this is a test of the TipTop API call using Javascript and XHR"</p>
     </div>
+
     <script>
       /*
       Origin : "http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=Chilly%20on%20the%20first%20day%20of%20summer%20in%20the%20bay%20area"
       var url = "http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=Chilly%20on%20the%20first%20day%20of%20summer%20in%20the%20bay%20area"
       */
+
+      function validateForm()
+      {
+        var str = document.forms["myTweets"]["tweet"].value;
+        if (str==null || str == "")
+        {
+          alert("You must enter a tweet");
+          return false;
+        }
+        else
+        {
+            var url = encodeURIComponent(str);
+            xhr.open("GET","tiptop_twitterapi.php?tweet=" + url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.send();
+            console.log("Status", xhr.status);
+            console.log("Status text", xhr.statusText);
+        }
+      }
 
       var xhr=new XMLHttpRequest();
 
@@ -65,13 +92,14 @@
 
     }
 
-    var str="Obama%20has%20trade%20talks%20about%20nuclear%20weapons";
+    /*var str="Obama%20has%20trade%20talks%20about%20nuclear%20weapons";
 
     xhr.open("GET","tiptop_twitterapi.php?tweet=" + str, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send();
     console.log("Status", xhr.status);
     console.log("Status text", xhr.statusText);
+    */
     </script>
   </body>
 
