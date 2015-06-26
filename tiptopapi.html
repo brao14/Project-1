@@ -19,12 +19,19 @@
       }
       else
       {
+          var xhr=new XMLHttpRequest();
+
+
+          console.log("created a xmlhhtprequest object");
+
           var url = encodeURI(str);
           xhr.open("POST","tiptop_twitterapi.php?tweet=" + url, true);
           xhr.setRequestHeader("Content-Type", "application/json");
           xhr.send();
           console.log("Status", xhr.status);
           console.log("Status text", xhr.statusText);
+
+
           xhr.onreadystatechange = function()
           {
             console.log("In onreadystatechange function");
@@ -74,9 +81,7 @@
       }
     }
 
-    var xhr=new XMLHttpRequest();
 
-    console.log("created a xmlhhtprequest object");
 
 
 
