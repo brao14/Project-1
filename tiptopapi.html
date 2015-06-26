@@ -19,7 +19,7 @@
       }
       else
       {
-          var url = encodeURIComponent(str);
+          var url = encodeURI(str);
           xhr.open("GET","tiptop_twitterapi.php?tweet=" + url, true);
           xhr.setRequestHeader("Content-Type", "application/json");
           xhr.send();
