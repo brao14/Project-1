@@ -24,11 +24,6 @@
           console.log("created a xmlhhtprequest object");
 
           var url = encodeURI(str);
-          xhr.open("GET","tiptop_twitterapi.php?tweet=" + url, true);
-          xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-          xhr.send();
-          console.log("Status", xhr.status);
-          console.log("Status text", xhr.statusText);
 
 
           xhr.onreadystatechange = function()
@@ -76,24 +71,14 @@
             document.getElementById("tt_main").innerHTML = table;
 
         }
+        xhr.open("GET","tiptop_twitterapi.php?tweet=" + url, true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.send();
+        console.log("Status", xhr.status);
+        console.log("Status text", xhr.statusText);
 
       }
     }
-
-
-
-
-
-
-
-  /*var str="Obama%20has%20trade%20talks%20about%20nuclear%20weapons";
-
-  xhr.open("GET","tiptop_twitterapi.php?tweet=" + str, true);
-  xhr.setRequestHeader("Content-Type", "application/json");
-  xhr.send();
-  console.log("Status", xhr.status);
-  console.log("Status text", xhr.statusText);
-  */
   </script>
   <body>
   <div class="tweetform">
