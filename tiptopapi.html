@@ -30,8 +30,7 @@
           {
             console.log("In onreadystatechange function");
             event.preventDefault();
-            var msg = "<p> Retrieving sentiment of the tweet </p>"
-            document.getElementById("tt_main").innerHTML = msg;
+
             if (xhr.readyState != 4)
             {
               console.log(xhr.readyState);
@@ -76,9 +75,9 @@
             return false;
 
         }
-        xhr.open("GET","tiptop_twitterapi.php?tweet=" + url, true);
+        xhr.open("POST","tiptop_twitterapi.php, true);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.send();
+        xhr.send(url);
         console.log("Status", xhr.status);
         console.log("Status text", xhr.statusText);
       }
