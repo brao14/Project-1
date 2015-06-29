@@ -33,15 +33,15 @@
 
             if (xhr.readyState != 4)
             {
-              console.log(xhr.readyState);
               return; // Not there yet
             }
             if (xhr.status != 200)
             {
               // Handle request failure here...
-              console.log(xhr.readyState);
               return;
             }
+            console.log(xhr.readyState);
+            console.log(xhr.status);
             // Request successful, read the response
             var resp = xhr.responseText;
             console.log(resp);
