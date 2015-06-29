@@ -5,20 +5,21 @@
 $tweet = $_GET["tweet"];
 echo "<html>";
 echo "<body>";
-echo "<p>$tweet</p>";
+echo "<p>Tweet passed in = $tweet</p>";
 $encodedtweet = urlencode($tweet);
-echo "<br>$encodedtweet<br>";
+echo "<br> Encode tweet = $encodedtweet<br>";
 $curl = curl_init("http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=" . $encodedtweet);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $result = curl_exec($curl);
-// echo $result;
+curl_close($curl);
+echo "<p> Result from curl = $result </p>";
 $noob = json_decode($result, true);
-//echo $noob;
+echo "<p> Result from json_decode =  $noob </p>";
 
-echo "<p> $noob['tweet'] </p>";
-echo "<p> count($noob['topics']) </p>";
+//echo "<p> $noob['tweet'] </p>";
+//echo "<p> count($noob['topics']) </p>";
 echo "</body>";
 echo "</html>";
-curl_close($curl);
+
 
 ?>
