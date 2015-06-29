@@ -3,7 +3,7 @@
 <?php
 // http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=Chilly%20on%20the%20first%20day%20of%20summer%20in%20the%20bay%20area
 $tweet = $_GET["tweet"];
-echo "<html>"
+echo "<html>";
 echo "<body>";
 echo "<p>$tweet</p>";
 $encodedtweet = urlencode($tweet);
