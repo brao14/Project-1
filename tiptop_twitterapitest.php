@@ -10,15 +10,15 @@ $encodedtweet = urlencode($tweet);
 echo "<br>$encodedtweet<br>";
 $curl = curl_init("http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=" . $encodedtweet);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-$noob = curl_exec($curl);
-
+//$result = curl_exec($curl);
 // echo $result;
-
 // $noob = json_decode($result->response['response'], true);
 //echo $noob;
+$noob = curl_exec($curl);
+
 echo "<p> $noob['tweet'] </p>";
 echo "<p> count($noob['topics'])</p>";
-*/
+
 
 /*
 echo "<table style=\"width:100%\">"
