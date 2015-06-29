@@ -74,7 +74,8 @@
 
         }
         xhr.open("GET","tiptop_twitterapi.php?tweet=" + url, true);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      //  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.setRequestHeader("Content-Type", "application/json")
         xhr.send();
         console.log("Status", xhr.status);
         console.log("Status text", xhr.statusText);
