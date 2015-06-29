@@ -71,7 +71,7 @@
             document.getElementById("tt_main").innerHTML = table;
             console.log("Modified html")
             console.log(table);
-            return false;
+            return;
 
         }
         xhr.open("GET","tiptop_twitterapi.php?tweet=" + url, true);
