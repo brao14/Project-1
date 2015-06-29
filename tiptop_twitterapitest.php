@@ -14,9 +14,9 @@ $result = curl_exec($curl);
 curl_close($curl);
 echo "<p> Result from curl = $result </p>";
 $noob = json_decode($result, true);
-echo "<p> Result from json_decode =  $noob </p>";
+//echo "<p> Result from json_decode =  $noob </p>";
 
-//echo "<p> $noob['tweet'] </p>";
+echo "<p> $noob['tweet'] </p>";
 //echo "<p> count($noob['topics']) </p>";
 echo "</body>";
 echo "</html>";
