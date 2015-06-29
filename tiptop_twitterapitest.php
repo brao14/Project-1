@@ -5,7 +5,6 @@
 $tweet = $_GET["tweet"];
 echo "<html>"
 echo "<body>";
-echo "<h2>";
 echo "<p>$tweet</p>";
 $encodedtweet = urlencode($tweet);
 echo "<br>$encodedtweet<br>";
@@ -14,7 +13,9 @@ $result = curl_exec($curl);
 curl_close($curl);
 //print $result;
 $noob = json_decode($result->response['response'], false);
-
+$twitter=$noob.tweet;
+echo "<p> $twitter </p>";
+/*
 echo "<table style=\"width:100%\">"
 
 echo "<tr><td>" , $noob.tweet , "</td>";
@@ -27,7 +28,9 @@ for ($count=0; $count < $noob.topics.length; $count++)
       echo "<td>" , $propertyName , ":" , $noob.topics[$count][$propertyName] , "</td>";
     }
 }
+
 echo "</table">;
+*/
 echo "</body>";
 echo "</html>";
 
