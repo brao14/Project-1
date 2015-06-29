@@ -1,5 +1,4 @@
-<html>
-<body>
+
 
 <?php
 // http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=Chilly%20on%20the%20first%20day%20of%20summer%20in%20the%20bay%20area
@@ -12,10 +11,10 @@ $result = curl_exec($curl);
 curl_close($curl);
 //print $result;
 $noob = json_decode($result->response['response'], false);
-?>
+echo $noob.tweet
 
 
-<table style="width:100%">
+/*
 <tr>
 <td>
 <?php echo $noob.tweet?>
@@ -37,6 +36,5 @@ echo $table;
 ?>
 </tr>
 </table>
-
-</body>
-</html>
+*/
+?>
