@@ -9,7 +9,7 @@
     var url = "http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=Chilly%20on%20the%20first%20day%20of%20summer%20in%20the%20bay%20area"
     */
 
-    function validateForm()
+    function validateForm(event)
     {
       var str = document.forms["myTweets"]["tweet"].value;
       if (str==null || str == "")
@@ -72,6 +72,7 @@
             table += "</table>";
             document.getElementById("tt_main").innerHTML = table;
             console.log("Modified html")
+            console.log(table);
             return false;
 
         }
@@ -86,7 +87,7 @@
   </script>
   <body>
   <div class="tweetform">
-    <form name="myTweets" action="" method="GET" onsubmit="return validateForm()">
+    <form name="myTweets" action="" method="GET" onsubmit="return validateForm(event)">
       Please enter a tweet below: <br>
       <input type="text" name="tweet">
       </br>
