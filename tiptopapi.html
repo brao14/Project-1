@@ -71,7 +71,6 @@
             document.getElementById("tt_main").innerHTML = table;
             console.log("Modified html")
             console.log(table);
-            return;
 
         }
         xhr.open("GET","tiptop_twitterapi.php?tweet=" + url, true);
@@ -80,16 +79,16 @@
         console.log("Status", xhr.status);
         console.log("Status text", xhr.statusText);
       }
-      return false;
+      return;
     }
   </script>
   <body>
   <div class="tweetform">
-    <form name="myTweets" action="" method="GET" onsubmit="return validateForm(event)">
+    <form name="myTweets" action="tiptop_twitterapi.php" method="GET" onsubmit="return validateForm(event)">
       Please enter a tweet below: <br>
       <input type="text" name="tweet">
       </br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="SubmitX">
     </form>
   </div>
     <div id="tt_main">
