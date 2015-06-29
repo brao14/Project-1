@@ -16,25 +16,7 @@ $noob = json_decode($result, true);
 //echo $noob;
 
 echo "<p> $noob['tweet'] </p>";
-echo "<p> count($noob['topics'])</p>";
-
-
-/*
-echo "<table style=\"width:100%\">"
-
-echo "<tr><td>" , $noob['tweet'], "</td>";
-
-$count=0;
-for ($count=0; $count < $noob['topics'].length; $count++)
-{
-    foreach ($topicname as array_keys($noob['topics'][$count]) )
-    {
-      echo "<td>" , $topicname , ":" , $noob['topics][$count][$topicname] , "</td>";
-    }
-}
-
-echo "</table">;
-*/
+echo "<p> count($noob['topics']) </p>";
 echo "</body>";
 echo "</html>";
 curl_close($curl);
