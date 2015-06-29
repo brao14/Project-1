@@ -12,8 +12,8 @@ $curl = curl_init("http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/an
 $result = curl_exec($curl);
 curl_close($curl);
 //print $result;
-$noob = json_decode($result->response['response'], false);
-$twitter=$noob.tweet;
+//$noob = json_decode($result->response['response'], false);
+$twitter=$result.tweet;
 echo "<p> $twitter </p>";
 /*
 echo "<table style=\"width:100%\">"
