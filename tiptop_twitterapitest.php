@@ -12,12 +12,13 @@ $curl = curl_init("http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/an
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $result = curl_exec($curl);
 
-//print $result;
+echo $result;
+/*
 $noob = json_decode($result->response['response'], true);
 //echo $noob;
 echo "<p> $noob['tweet'] </p>";
 echo "<p> count($noob['topics'])</p>";
-
+*/
 
 /*
 echo "<table style=\"width:100%\">"
