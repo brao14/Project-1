@@ -13,7 +13,7 @@ $result = curl_exec($curl);
 
 //print $result;
 //$noob = json_decode($result->response['response'], false);
-$twitter=$result.tweet;
+$twitter=$result->tweet;
 echo "<p> $twitter </p>";
 /*
 echo "<table style=\"width:100%\">"
