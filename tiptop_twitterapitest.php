@@ -10,7 +10,7 @@ $encodedtweet = urlencode($tweet);
 echo "<br>$encodedtweet<br>";
 $curl = curl_init("http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=" . $encodedtweet);
 $result = curl_exec($curl);
-curl_close($curl);
+
 //print $result;
 //$noob = json_decode($result->response['response'], false);
 $twitter=$result.tweet;
@@ -33,5 +33,6 @@ echo "</table">;
 */
 echo "</body>";
 echo "</html>";
+curl_close($curl);
 
 ?>
