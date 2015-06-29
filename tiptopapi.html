@@ -29,7 +29,7 @@
           xhr.onreadystatechange = function(event)
           {
             console.log("In onreadystatechange function");
-            event.preventDefault();
+            //event.preventDefault();
 
             if (xhr.readyState != 4)
             {
@@ -85,11 +85,11 @@
   </script>
   <body>
   <div class="tweetform">
-    <form name="myTweets" action="tiptop_twitterapi.php" method="GET" onsubmit="return validateForm(event)">
+    <form name="myTweets" action="tiptop_twitterapi.php" method="GET" onsubmit="validateForm(event); return false">
       Please enter a tweet below: <br>
       <input type="text" name="tweet">
       </br>
-    <input type="submit" value="SubmitZ">
+    <input type="submit" value="SubmitTry">
     </form>
   </div>
     <div id="tt_main">
