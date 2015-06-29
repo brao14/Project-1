@@ -11,7 +11,13 @@ $result = curl_exec($curl);
 curl_close($curl);
 //print $result;
 $noob = json_decode($result->response['response'], false);
-echo $noob.tweet
+echo "<html>"
+echo "<body>"
+echo "<h2>"
+echo $noob[0].tweet
+echo "</h2>"
+echo "</body>"
+echo "</html>"
 
 
 /*
