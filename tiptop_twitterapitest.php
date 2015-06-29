@@ -13,7 +13,7 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $result = curl_exec($curl);
 
 //print $result;
-$noob = json_decode($result->response['response'], false);
+$noob = json_decode($result->response['response'], true);
 $twitter=$noob.tweet;
 echo $twitter;
 /*
