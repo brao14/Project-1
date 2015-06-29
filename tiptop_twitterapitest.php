@@ -9,6 +9,7 @@ echo "<p>$tweet</p>";
 $encodedtweet = urlencode($tweet);
 echo "<br>$encodedtweet<br>";
 $curl = curl_init("http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=" . $encodedtweet);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $result = curl_exec($curl);
 
 //print $result;
