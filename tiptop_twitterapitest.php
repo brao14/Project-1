@@ -14,8 +14,8 @@ $result = curl_exec($curl);
 
 //print $result;
 $noob = json_decode($result->response['response'], true);
-$twitter=$noob["tweet"];
-echo $twitter;
+echo $noob;
+echo $noob['tweet'];
 /*
 echo "<table style=\"width:100%\">"
 
