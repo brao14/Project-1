@@ -23,6 +23,11 @@ $ar = json_decode($result);
 //echo "<p> Result from json_decode with true option =  $ar </p>";
 //var_dump($ar);
 echo "<table>";
+echo "<tr>";
+echo "<th> Tweet </th>";
+echo "<th> Topic:Sentiment </th>";
+echo "</tr>";
+
 foreach ( $ar as $k => $v ) {
   //echo "<br> \$ar[$k] = $v <br>";
 
@@ -31,9 +36,14 @@ foreach ( $ar as $k => $v ) {
   }
 
   if ( $k == "topics") {
+    echo "Found topics"
+    var_dump($ar[$k]);
+
+    /*
     foreach ( $ar[$k] as $topic => $sentiment) {
       echo "<td>" . "$topic : $sentiment" . "</td>";
     }
+    */
   }
 
   echo "</tr>";
