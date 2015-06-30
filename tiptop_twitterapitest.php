@@ -3,9 +3,9 @@
 <?php
 
 $tweet = $_GET["tweet"];
-echo "<p>Tweet passed in = $tweet</p>";
+// echo "<p>Tweet passed in = $tweet</p>";
 $encodedtweet = urlencode($tweet);
-echo "<br> Encode tweet = $encodedtweet <br>";
+// echo "<br> Encoded tweet = $encodedtweet <br>";
 $curl = curl_init("http://apis.feeltiptop.com/demos/Restler/twitterdemo/tweet/analyze?tweet=" . $encodedtweet);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $result = curl_exec($curl);
