@@ -31,6 +31,7 @@ foreach ( $ar as $k => $v ) {
   if ( $k == "topics") {
     foreach ( $ar($k) as $topic => $sentiment) {
       echo "Topic = $sentiment" . "<br>"
+    }
   }
 }
 
