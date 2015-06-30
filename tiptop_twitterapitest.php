@@ -19,9 +19,9 @@ echo "<p> Result from curl = $result </p>";
 //echo "<p> Result from json_decode  =  $noob </p>";
 //echo "<p> $noob->tweet </p>";
 
-$ar = json_decode($result, true);
+$ar = json_decode($result);
 //echo "<p> Result from json_decode with true option =  $ar </p>";
-var_dump($ar);
+//var_dump($ar);
 
 foreach ( $ar as $k => $v ) {
   echo "\$ar[$k] = $v";
