@@ -22,19 +22,20 @@ echo "<p> Result from curl = $result </p>";
 $ar = json_decode($result);
 //echo "<p> Result from json_decode with true option =  $ar </p>";
 //var_dump($ar);
-
+echo "<table>"
 foreach ( $ar as $k => $v ) {
   //echo "<br> \$ar[$k] = $v <br>";
   if ($k == "tweet") {
-    echo "Tweet = $v"
+    echo "<tr><td>" . "Tweet = $v" . "</td";
   }
   if ( $k == "topics") {
     foreach ( $ar($k) as $topic => $sentiment) {
-      echo "Topic = $sentiment" . "<br>"
+      echo "<td>" "Topic = $sentiment" . "</td>"
     }
   }
+  echo "</tr>";
 }
-
+echo "</table>";
 echo "</body>";
 echo "</html>";
 ?>
