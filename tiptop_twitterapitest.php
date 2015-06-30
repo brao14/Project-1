@@ -13,10 +13,10 @@ curl_close($curl);
 
 $ar = json_decode($result);
 
-echo "<table>";
+echo "<table border=\"1\" color=\"solid black\" style=\"width:100%\">";
 echo "<tr>";
-echo "<th> Tweet </th>";
 echo "<th> Topic:Sentiment </th>";
+echo "<th> Tweet </th>";
 echo "</tr>";
 foreach ( $ar as $k => $v ) {
 
