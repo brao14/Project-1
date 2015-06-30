@@ -15,23 +15,25 @@ $ar = json_decode($result);
 
 echo "<table>";
 echo "<tr>";
-echo "<th> Topic:Sentiment </th>";
 echo "<th> Tweet </th>";
+echo "<th> Topic:Sentiment </th>";
 echo "</tr>";
 foreach ( $ar as $k => $v ) {
 
   if ($k == "tweet") {
-    echo "<tr><td>" . $v . "</td";
+    echo "<tr><td>" . $v . "</td></tr>";
   }
 
    if ( $k == "topics") {
+     echo "<tr><td>";
     for ( $count = 0; $count < sizeof($v); $count ++ ) {
       foreach ( $v[$count] as $topic => $sentiment) {
-        echo "<td>" . "$topic : $sentiment" . "</td>";
+        echo "$topic : $sentiment";
+        echo "<br>";
       }
     }
   }
-  echo "</tr>";
+  echo "</td></tr>";
 }
 echo "</table>";
 echo "</body>";
