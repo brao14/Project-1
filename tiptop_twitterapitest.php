@@ -24,14 +24,16 @@ $ar = json_decode($result);
 //var_dump($ar);
 
 foreach ( $ar as $k => $v ) {
-  echo "<br> \$ar[$k] = $v <br>";
-}
-foreach(array_keys($ar) as $keyname) {
-  echo $keyname . "<br>";
-  if ($keyname == "tweet") {
-      echo "\$ar[$keyname]" ."<br>";
+  //echo "<br> \$ar[$k] = $v <br>";
+  if ($k == "tweet") {
+    echo "Tweet = $v"
+  }
+  if ( $k == "topics") {
+    foreach ( $ar($k) as $topic => $sentiment) {
+      echo "Topic = $sentiment" . "<br>"
   }
 }
+
 echo "</body>";
 echo "</html>";
 ?>
