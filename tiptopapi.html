@@ -51,7 +51,7 @@
             //document.getElementById("tweet").innerHTML = noob.items[1].topic[1].Weather;
             console.log("Number of topics = ", noob.topics.length);
             var count=0;
-            var table = "<table style=\"width:100%\">"
+            var table = "<table border=\"1\" color=\"blue\" style=\"width:100%\">"
 
             table += "<tr><td>" + noob.tweet + "</td>";
 
@@ -59,10 +59,12 @@
             {
               //table += "<tr><td>" + noob.items[count].tweet + "</td>";
               //for (count1=0; count1<noob.items[count].topic.length; count1++)
+              table += "<td>";
                 for (var propertyName in noob.topics[count])
                 {
-                  table += "<td>" + propertyName + ":" + noob.topics[count][propertyName] + "</td>";
+                  table += propertyName + ":" + noob.topics[count][propertyName];
                 }
+                table += "</td>";
             }
               table += "</tr>";
               //document.getElementById("tweets").innerHTML = myRows;
