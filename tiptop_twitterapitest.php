@@ -21,7 +21,7 @@ echo "</tr>";
 foreach ( $ar as $k => $v ) {
 
   if ($k == "tweet") {
-    echo "<tr><td>" . $v . "</td></tr>";
+    echo "<tr><td></td><td>" . $v . "</td></tr>"
   }
 
    if ( $k == "topics") {
