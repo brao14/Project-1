@@ -20,8 +20,9 @@ echo "<th> Topic:Sentiment </th>";
 echo "</tr>";
 foreach ( $ar as $k => $v ) {
 
-  if ($k == "tweet") {
-    echo "<tr><td></td><td>" . $v . "</td></tr>"
+  if ($k == "tweet")
+  {
+    echo "<tr><td></td><td>" . $v . "</td></tr>";
   }
 
    if ( $k == "topics") {
