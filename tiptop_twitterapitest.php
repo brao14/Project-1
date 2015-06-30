@@ -20,8 +20,12 @@ echo "<p> Result from curl = $result </p>";
 //echo "<p> $noob->tweet </p>";
 
 $ar = json_decode($result, true);
-echo "<p> Result from json_decode with true option =  $ar </p>";
-// echo "<p> $ar['tweet'] </p>";
+//echo "<p> Result from json_decode with true option =  $ar </p>";
+var_dump($ar);
+
+foreach ( $ar as $k => $v ) {
+  echo "\$ar[$k] = $v";
+}
 echo "</body>";
 echo "</html>";
 ?>
