@@ -13,16 +13,20 @@ curl_close($curl);
 
 $ar = json_decode($result);
 
-echo "<table border=\"1\" color=\"solid black\" style=\"width:100%\">";
+echo "<table border=\"1\" color=\"red\" style=\"width:100%\">";
 echo "<tr>";
 echo "<th> Topic:Sentiment </th>";
 echo "<th> Tweet </th>";
 echo "</tr>";
-foreach ( $ar as $k => $v ) {
-   if ( $k == "topics") {
+foreach ( $array as $key => $value )
+{
+   if ( $key == "topics")
+   {
     echo "<tr><td>";
-    for ( $count = 0; $count < sizeof($v); $count ++ ) {
-      foreach ( $v[$count] as $topic => $sentiment) {
+    for ( $count = 0; $count < sizeof($value); $count ++ )
+    {
+      foreach ( $value[$count] as $topic => $sentiment)
+      {
         echo "$topic : $sentiment";
         echo "<br>";
       }
@@ -30,9 +34,9 @@ foreach ( $ar as $k => $v ) {
     echo "</td>";
   }
 
-  if ($k == "tweet")
+  if ($key == "tweet")
   {
-    echo "<td>" . $v . "</td>";
+    echo "<td>" . $value . "</td>";
     echo "</tr>";
   }
 
