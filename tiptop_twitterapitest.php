@@ -27,12 +27,13 @@ foreach ( $ar as $k => $v ) {
   //echo "<br> \$ar[$k] = $v <br>";
   if ($k == "tweet") {
     echo "<tr><td>" . "Tweet = $v" . "</td";
-  }
+  }/*
   if ( $k == "topics") {
     foreach ( $ar($k) as $topic => $sentiment) {
       echo "<td>" "Topic = $sentiment" . "</td>"
     }
   }
+  */
   echo "</tr>";
 }
 echo "</table>";
