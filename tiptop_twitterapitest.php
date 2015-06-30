@@ -17,11 +17,11 @@ echo "<p> Result from curl = $result </p>";
 
 $noob = json_decode($result);
 echo "<p> Result from json_decode  =  $noob </p>";
-echo "<p> $noob->tweet </p>";
+//echo "<p> $noob->tweet </p>";
 
 $ar = json_decode($result, true);
 echo "<p> Result from json_decode with true option =  $ar </p>";
-echo "<p> $ar['tweet'] </p>";
+// echo "<p> $ar['tweet'] </p>";
 echo "</body>";
 echo "</html>";
 ?>
