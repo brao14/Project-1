@@ -24,7 +24,13 @@ $ar = json_decode($result);
 //var_dump($ar);
 
 foreach ( $ar as $k => $v ) {
-  echo "\$ar[$k] = $v";
+  echo "<br> \$ar[$k] = $v <br>";
+}
+foreach(array_keys($ar) as $keyname) {
+  echo $keyname . "<br>";
+  if ($keyname == "tweet") {
+      echo "\$ar[$keyname]" ."<br>";
+  }
 }
 echo "</body>";
 echo "</html>";
