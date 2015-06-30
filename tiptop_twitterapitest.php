@@ -18,14 +18,14 @@ echo "<tr>";
 echo "<th> Topic:Sentiment </th>";
 echo "<th> Tweet </th>";
 echo "</tr>";
-foreach ( $array as $key => $value )
+foreach ( $ar as $k => $v )
 {
-   if ( $key == "topics")
+   if ( $k == "topics")
    {
     echo "<tr><td>";
-    for ( $count = 0; $count < sizeof($value); $count ++ )
+    for ( $count = 0; $count < sizeof($v); $count ++ )
     {
-      foreach ( $value[$count] as $topic => $sentiment)
+      foreach ( $v[$count] as $topic => $sentiment)
       {
         echo "$topic : $sentiment";
         echo "<br>";
@@ -34,9 +34,9 @@ foreach ( $array as $key => $value )
     echo "</td>";
   }
 
-  if ($key == "tweet")
+  if ($k == "tweet")
   {
-    echo "<td>" . $value . "</td>";
+    echo "<td>" . $v . "</td>";
     echo "</tr>";
   }
 
