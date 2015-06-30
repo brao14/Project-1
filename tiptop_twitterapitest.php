@@ -36,7 +36,7 @@ foreach ( $ar as $k => $v ) {
   }
 
   if ( $k == "topics") {
-    echo "Found topics"
+    echo "Found topics";
     var_dump($ar[$k]);
 
     /*
