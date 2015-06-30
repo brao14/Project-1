@@ -19,9 +19,8 @@ echo "<th> Topic:Sentiment </th>";
 echo "<th> Tweet </th>";
 echo "</tr>";
 foreach ( $ar as $k => $v ) {
-   echo "<tr>";
    if ( $k == "topics") {
-    echo "<td>";
+    echo "<tr><td>";
     for ( $count = 0; $count < sizeof($v); $count ++ ) {
       foreach ( $v[$count] as $topic => $sentiment) {
         echo "$topic : $sentiment";
@@ -34,8 +33,9 @@ foreach ( $ar as $k => $v ) {
   if ($k == "tweet")
   {
     echo "<td>" . $v . "</td>";
+    echo "</tr>";
   }
-  echo "</tr>";
+
 }
 echo "</table>";
 echo "</body>";
