@@ -13,9 +13,9 @@ $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
 $requestMethod = 'GET';
 
 $getfields = array(
-    'screen_name' => 'washingtonpost',
+    'user_id' => 'washingtonpost',
     'count' => '15',
-    'include_rts' => '1'
+    'include_rts' => 'false'
 );
 
 $twitter = new TwitterAPIExchange($settings);
