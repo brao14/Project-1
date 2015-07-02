@@ -14,7 +14,7 @@ $requestMethod = 'GET';
 
 $getfields = array(
     'screen_name' => 'washingtonpost',
-    'count' => '15'
+    'count' => '15',
     'include_rts' => '1'
 );
 
