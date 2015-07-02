@@ -1,25 +1,26 @@
 <?php
-require 'app_tokens.php';
-require 'tmhOAuth.php';
+require_once('TwitterAPIExchange.php');
 
-$connection = new tmhOAuth(array(
-  'consumer_key' => $consumer_key,
-  'consumer_secret' => $consumer_secret,
-  'user_token' => $user_token,
-  'user_secret' => $user_secret
-));
+/** Set access tokens here - see: https://dev.twitter.com/apps/ **/
+$settings = array(
+    'oauth_access_token' => "XLBkWmMkhrcllKEZIyGnKPbJJ",
+    'oauth_access_token_secret' => "EtsltFAzRFNafTsTnVWGwbSjnIbgCry7ostvWAJiNIbZ8sAscO",
+    'consumer_key' => "448642049-WCSocyo4mAL2cRnCJdEv0vJAts9FGx9IozRU6z6H",
+    'consumer_secret' => "xy0DccFAkfyBQy8WX8VL4txok8rcdlV43ZnGlEleGo6MB"
+);
 
-$connection->request('GET', $connection->url('1.1/search/tweets'), array('screen_name' => 'washingtonpost'));
+$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+$requestMethod = 'GET';
 
-$response_code=$connection->response['code'];
+$getfields = array(
+    'screen_name' => 'washingtonpost',
+    'count' => '15'
+    'include_rts' => '1'
+);
 
-if ($response_code <> 200) {
- print "Error: $response_code\n";
- error_log("Bharat: Response code is not 200");
-}
-$response_data = json_decode($connection->response['response'],true);
-
-error_log("Bharat: $response_code");
-print_r($response_data);
+$twitter = new TwitterAPIExchange($settings);
+echo $twitter->setGetfield($getfield)
+             ->buildOauth($url, $requestMethod)
+             ->performRequest();
 
 ?>
