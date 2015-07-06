@@ -21,7 +21,7 @@ $twitterjson =  $twitter->setGetfield($getfields)
                         ->buildOauth($url, $requestMethod)
                         ->performRequest();
 
-$twitterjsondecode = json_decode($twitter);
+$twitterjsondecode = json_decode($twitterjson);
 
 
 
