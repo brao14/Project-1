@@ -23,7 +23,7 @@ $twitterjson =  $twitter->setGetfield($getfields)
 
 $twitterjsondecode = json_decode($twitterjson);
 
-print $twitterjsondecode;
+print $twitterjsondecode[0];
 
 
 
