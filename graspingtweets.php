@@ -13,7 +13,7 @@ $url = 'https://api.twitter.com/1.1/search/tweets.json';
 $requestMethod = 'GET';
 
 
-$getfields = '%40washingtonpost';
+$getfields = '?q=%40washingtonpost';
 
 $twitter = new TwitterAPIExchange($settings);
 echo $twitter->setGetfield($getfields)
