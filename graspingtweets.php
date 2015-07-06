@@ -16,13 +16,10 @@ $requestMethod = 'GET';
 $getfields = '?q=%40washingtonpost';
 
 $twitter = new TwitterAPIExchange($settings);
-echo $twitter->setGetfield($getfields)
-             ->buildOauth($url, $requestMethod)
-             ->performRequest()
 
 $twitterjson =  $twitter->setGetfield($getfields)
-             ->buildOauth($url, $requestMethod)
-             ->performRequest()
+                        ->buildOauth($url, $requestMethod)
+                        ->performRequest();
 
 $twitterjsondecode = json_decode($twitter);
 
