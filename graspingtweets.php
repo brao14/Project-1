@@ -21,23 +21,38 @@ $twitterjson =  $twitter->setGetfield($getfields)
                         ->buildOauth($url, $requestMethod)
                         ->performRequest();
 
-$twitterjsondecode = json_decode($twitterjson);
+$tjd = json_decode($twitterjson);
 
-print $twitterjsondecode[0];
+foreach ( $tjd as $k => $v )
+{
+   if ( $k == "statuses")
+   {
+    for ( $count = 0; $count < sizeof($v); $count ++ )
+    {
+      foreach ( $v[$count] as $key => $val)
+      {
+        if ( $key == "text") {
+          echo $val;
+        }
+      }
+    }
+  }
 
+}
 
+/*
 
 foreach ( $twitterjsondecode as $k => $v )
 {
   print "Hello";
-  /*
+
   $statuscounts = 0;
    if ( $k == "search_metadata")
    {
      print $v.count;
      $statuscounts=$v.count;
    }
-   */
+
    if ( $k == "statuses")
    {
      $statuscounts=sizeof($v);
@@ -56,5 +71,5 @@ foreach ( $twitterjsondecode as $k => $v )
 
 
 }
-
+*/
 ?>
