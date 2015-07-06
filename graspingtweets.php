@@ -25,7 +25,7 @@ $twitterjsondecode = json_decode($twitterjson);
 
 
 
-foreach ( $ar as $k => $v )
+foreach ( $twitterjsondecode as $k => $v )
 {
   print "Hello";
   /*
