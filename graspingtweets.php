@@ -9,13 +9,11 @@ $settings = array(
     'consumer_secret' => "M6ail8PaiiLElqe4zmRWiLuZHdmevra1JjNfxTfC4w3jwvg4nu"
 );
 
-$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+$url = 'https://api.twitter.com/1.1/search/tweets.json';
 $requestMethod = 'GET';
 
 $getfields = array(
-    'user_id' => 'washingtonpost',
-    'count' => '15',
-    'include_rts' => 'false'
+    'q' => '%40washingtonpost'
 );
 
 $twitter = new TwitterAPIExchange($settings);
