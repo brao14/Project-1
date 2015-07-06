@@ -23,6 +23,8 @@ $twitterjson =  $twitter->setGetfield($getfields)
 
 $twitterjsondecode = json_decode($twitterjson);
 
+print $twitterjsondecode;
+
 
 
 foreach ( $twitterjsondecode as $k => $v )
@@ -41,7 +43,13 @@ foreach ( $twitterjsondecode as $k => $v )
      $statuscounts=sizeof($v);
      for ($i=0; $i<$statuscounts; $i++)
      {
-        print $v[$i].text;
+        foreach ($v[$i] as $key => $value)
+        {
+          if ( $key == "text")
+          {
+            print $key;
+          }
+        }
      }
 
    }
