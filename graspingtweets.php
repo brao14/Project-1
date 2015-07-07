@@ -13,7 +13,7 @@ $url = 'https://api.twitter.com/1.1/search/tweets.json';
 $requestMethod = 'GET';
 
 
-$getfields = '?q=%40washingtonpost';
+$getfields = '?q=%40FT';
 
 $twitter = new TwitterAPIExchange($settings);
 
@@ -36,9 +36,8 @@ foreach ( $tjd as $k => $v )
       foreach ( $v[$count] as $key => $val)
       {
         if ( $key == "text") {
-          echo "<tr><td>";
           echo $val;
-          echo "</td></tr>";
+          echo "<br>";
         }
       }
     }
@@ -46,37 +45,4 @@ foreach ( $tjd as $k => $v )
 
 }
 echo "</table>";
-
-/*
-
-foreach ( $twitterjsondecode as $k => $v )
-{
-  print "Hello";
-
-  $statuscounts = 0;
-   if ( $k == "search_metadata")
-   {
-     print $v.count;
-     $statuscounts=$v.count;
-   }
-
-   if ( $k == "statuses")
-   {
-     $statuscounts=sizeof($v);
-     for ($i=0; $i<$statuscounts; $i++)
-     {
-        foreach ($v[$i] as $key => $value)
-        {
-          if ( $key == "text")
-          {
-            print $key;
-          }
-        }
-     }
-
-   }
-
-
-}
-*/
 ?>
