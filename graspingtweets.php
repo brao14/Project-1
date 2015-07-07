@@ -36,7 +36,7 @@ foreach ( $tjd as $k => $v )
       foreach ( $v[$count] as $key => $val)
       {
         if ( $key == "text") {
-          echo "<tr><td>"
+          echo "<tr><td>";
           echo $val;
           echo "</td></tr>";
         }
