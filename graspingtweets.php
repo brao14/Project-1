@@ -13,7 +13,7 @@ $url = 'https://api.twitter.com/1.1/search/tweets.json';
 $requestMethod = 'GET';
 
 
-$getfields = '?q=%40FT&result_type=popular';
+$getfields = '?q=%40TheEconomist&result_type=popular';
 
 $twitter = new TwitterAPIExchange($settings);
 
