@@ -14,7 +14,7 @@ $requestMethod = 'GET';
 
 
 $getfields = array(
-  '?q'=>'%40washingtonpost',
+  'q'=>'@washingtonpost',
   'result_type'=>'popular'
 );
 //'?q=%40washingtonpost';
