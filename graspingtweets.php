@@ -14,9 +14,9 @@ $requestMethod = 'GET';
 
 
 $getfields = array(
-  q=>'%40washingtonpost',
-  result_type=>'popular'
-)
+  '?q'=>'%40washingtonpost',
+  'result_type'=>'popular'
+);
 //'?q=%40washingtonpost';
 
 $twitter = new TwitterAPIExchange($settings);
