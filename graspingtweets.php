@@ -38,14 +38,14 @@ foreach ( $tjd as $k => $v )
    {
     for ( $count = 0; $count < sizeof($v); $count ++ )
     {
-      foreach ( $v[$count] as $key => $val)
-      {
+      //foreach ( $v[$count] as $key => $val)
+      //{
         if ( $key == "text")
         {
           return $val;
           //echo "<br>";
         }
-      }
+      //}
     }
   }
 
