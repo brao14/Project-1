@@ -1,7 +1,7 @@
 <?php
 require_once('graspingtweets.php');
 
-$tweet=returnTweet();
+$tweet=tweetReturn();
 
 $encodedtweet = urlencode($tweet);
 // echo "<br> Encoded tweet = $encodedtweet <br>";
