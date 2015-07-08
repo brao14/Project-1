@@ -48,6 +48,5 @@ foreach ( $tjd as $k => $v )
 
 }
 
-}
 echo "</table>";
 ?>
