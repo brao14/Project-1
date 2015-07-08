@@ -34,7 +34,8 @@ echo "</tr>";
 */
 foreach ( $tjd as $k => $v )
 {
-   if ( $k == "statuses")
+   //if ( $k == "statuses")
+   if ($k == " ")
    {
     for ( $count = 0; $count < sizeof($v); $count ++ )
     {
@@ -47,7 +48,7 @@ foreach ( $tjd as $k => $v )
         }
       //}
     }
-  }
+   }
 
 }
 
