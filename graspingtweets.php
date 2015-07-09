@@ -15,7 +15,7 @@ $url = 'https://api.twitter.com/1.1/search/tweets.json';
 $requestMethod = 'GET';
 
 
-$getfields = '?q=%40washingtonpost&result_type=recent&count=1';
+$getfields = '?q=%40AP&result_type=recent&count=1';
 //$getfields = '?screen_name=washingtonpost&include_rts=false&count=1';
 
 $twitter = new TwitterAPIExchange($settings);
