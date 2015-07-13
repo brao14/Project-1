@@ -1,6 +1,6 @@
 <?php
 require_once('graspingtweets.php');
-header("Refresh:30");
+//header("Refresh:30");
 
 $tweet=tweetReturn();
 
