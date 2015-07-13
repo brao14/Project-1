@@ -1,6 +1,6 @@
 <?php
-echo "<meta http-equiv="refresh" content="300">"
 require_once('graspingtweets.php');
+header("Refresh:30");
 
 $tweet=tweetReturn();
 
