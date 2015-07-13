@@ -1,4 +1,5 @@
 <?php
+echo "<meta http-equiv="refresh" content="300">"
 require_once('graspingtweets.php');
 
 $tweet=tweetReturn();
