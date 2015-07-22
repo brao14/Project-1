@@ -53,9 +53,9 @@ foreach ( $tjd as $k => $v )
     {
       foreach ( $v[$count] as $key => $val)
       {
-        if ( $key == "text")
+        for ($x=0; $x <= 14; $x++)
         {
-          for ($x=0; $x <= 14; $x++)
+          if ( $key == "text")
           {
             $arrayoftweets[$x]=$val;
           }
