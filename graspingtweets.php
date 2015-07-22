@@ -1,5 +1,15 @@
 <?php
 require_once('TwitterAPIExchange.php');
+
+function printArray($input)
+{
+  for($i=0; $i<=sizeof($input); $i++)
+  {
+    echo $input[$i];
+  }
+}
+
+
 function tweetReturn() {
 
 /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
@@ -32,6 +42,9 @@ echo "<tr>";
 echo "<th> Tweet</th>";
 echo "</tr>";
 */
+
+$arrayoftweets=array();
+
 foreach ( $tjd as $k => $v )
 {
    if ( $k == "statuses")
@@ -42,7 +55,10 @@ foreach ( $tjd as $k => $v )
       {
         if ( $key == "text")
         {
-          return $val;
+          for ($x=0; $x <= 14; $x++)
+          {
+            $arrayoftweets[$x]=$val;
+          }
           //echo "<br>";
         }
       }
@@ -50,6 +66,8 @@ foreach ( $tjd as $k => $v )
    }
 
 }
+
+return printArray($arrayoftweets);
 
 }
 //echo "</table>";
