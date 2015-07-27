@@ -1,15 +1,5 @@
 <?php
 require_once('TwitterAPIExchange.php');
-
-function printArray($input)
-{
-  for($i=0; $i<=sizeof($input); $i++)
-  {
-    echo $input[$i];
-  }
-}
-
-
 function tweetReturn() {
 
 /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
@@ -25,7 +15,7 @@ $url = 'https://api.twitter.com/1.1/search/tweets.json';
 $requestMethod = 'GET';
 
 
-$getfields = '?q=%40AP&result_type=recent&count=15';
+$getfields = '?q=%40AP&result_type=recent&count=1';
 //$getfields = '?screen_name=washingtonpost&include_rts=false&count=1';
 
 $twitter = new TwitterAPIExchange($settings);
@@ -42,9 +32,6 @@ echo "<tr>";
 echo "<th> Tweet</th>";
 echo "</tr>";
 */
-
-$arrayoftweets=array();
-
 foreach ( $tjd as $k => $v )
 {
    if ( $k == "statuses")
@@ -53,12 +40,9 @@ foreach ( $tjd as $k => $v )
     {
       foreach ( $v[$count] as $key => $val)
       {
-        for ($x=0; $x <= 14; $x++)
+        if ( $key == "text")
         {
-          if ( $key == "text")
-          {
-            $arrayoftweets[$x]=$val;
-          }
+          return $val;
           //echo "<br>";
         }
       }
@@ -66,8 +50,6 @@ foreach ( $tjd as $k => $v )
    }
 
 }
-
-return printArray($arrayoftweets);
 
 }
 //echo "</table>";
