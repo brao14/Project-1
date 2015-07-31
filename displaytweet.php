@@ -50,4 +50,9 @@ echo "</table>";
 echo "</body>";
 echo "</html>";
 }
+
+
+displayTweet();
+
+
 ?>
