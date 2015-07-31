@@ -1,5 +1,5 @@
 <?php
-require_once('graspingtweets.php')
+require_once('graspingtweets.php');
 
 
 function sentimentReturn()
