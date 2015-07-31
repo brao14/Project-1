@@ -3,11 +3,12 @@ require_once('graspingsentiment.php');
 header("Refresh:180");
 
 
-$ts=array();
-global $ts;
+$ts = array();
+
 
 function displayTweet()
 {
+global $ts;
 $ar=sentimentReturn();
 array_push($ts, $ar);
 
