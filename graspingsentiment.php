@@ -23,12 +23,14 @@ function displayTweet()
 global $ts;
 echo "<html>";
 echo "<body>";
+$max=sizeof($ts);
+echo "<h1>Displaying $max tweets</h1>";
 echo "<table border=\"1\" color=\"red\" style=\"width:100%\">";
 echo "<tr>";
 echo "<th> Topic:Sentiment </th>";
 echo "<th> Tweet </th>";
 echo "</tr>";
-for ($i=0; $i<sizeof($ts); $i++)
+for ($i=0; $i<$max; $i++)
 {
 foreach ( $ts[$i] as $k => $v )
 {
