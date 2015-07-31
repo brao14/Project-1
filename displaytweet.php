@@ -1,11 +1,15 @@
 <?php
 require_once('graspingsentiment.php');
+header("Refresh:180");
 
-$ts=array();
 
+global $ts=array();
+
+function displayTweet()
+{
 $ar=sentimentReturn();
-
 array_push($ts, $ar);
+
 echo "<html>";
 echo "<body>";
 echo "<table border=\"1\" color=\"red\" style=\"width:100%\">";
@@ -43,5 +47,5 @@ foreach ( $ts[$i] as $k => $v )
 echo "</table>";
 echo "</body>";
 echo "</html>";
-
+}
 ?>
