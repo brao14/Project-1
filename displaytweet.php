@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once('graspingsentiment.php');
-header("Refresh:180");
+// header("Refresh:180");
 
 
 $_SESSION['tns'] = array("test");
