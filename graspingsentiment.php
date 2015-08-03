@@ -1,6 +1,7 @@
 <?php
 require_once('graspingtweets.php');
-$ts = array();
+session_start();
+$_SESSION['tns'] = array();
 
 function sentimentReturn()
 {
@@ -20,7 +21,7 @@ return $ar;
 
 function displayTweet()
 {
-global $ts;
+$ts=$_SESSION['tns'];
 echo "<html>";
 echo "<body>";
 $max=sizeof($ts);
