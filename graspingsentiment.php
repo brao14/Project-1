@@ -21,7 +21,7 @@ return $ar;
 
 
 
-function displayTweet
+function displayTweet()
 {
   $tweet=$_SESSION['tns'];
   $max=sizeof($_SESSION['tns']);
