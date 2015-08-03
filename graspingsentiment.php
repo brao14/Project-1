@@ -23,7 +23,7 @@ function displayTweet()
 $ts=$_SESSION['tns'];
 echo "<html>";
 echo "<body>";
-$max=sizeof($ts);
+$max=sizeof($_SESSION['tns']);
 echo "<h1>Displaying $max tweets</h1>";
 echo "<table border=\"1\" color=\"red\" style=\"width:100%\">";
 echo "<tr>";
