@@ -4,7 +4,7 @@ require_once('graspingsentiment.php');
 header("Refresh:180");
 
 
-$_SESSION['tns'] = array();
+$_SESSION['tns'] = array("test");
 $ts=$_SESSION['tns'];
 
 //ar=sentimentReturn();
@@ -13,7 +13,7 @@ $ts=$_SESSION['tns'];
 
 $tweet=tweetReturn();
 array_push($_SESSION['tns'], $tweet);
-//print_r($_SESSION);
+print_r($_SESSION);
 
 displayTweet();
 
