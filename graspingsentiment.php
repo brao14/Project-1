@@ -18,7 +18,20 @@ print_r($ar);
 return $ar;
 }
 
-function displayTweet()
+
+
+
+function displayTweet
+{
+  $tweet=$_SESSION['tns'];
+  $max=sizeof($_SESSION['tns']);
+  for ($i=0; $i<$max; $i++)
+  {
+    echo $ts[$i];
+  }
+}
+
+function displaySentiment()
 {
 $ts=$_SESSION['tns'];
 echo "<html>";
