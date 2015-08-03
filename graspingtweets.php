@@ -59,11 +59,10 @@ foreach ( $tjd as $k => $v )
 
 function displayTweet()
 {
-  $tweets=$_SESSION['tns'];
-  $max=sizeof($_SESSION['tns']);
+  $max=sizeof($_SESSION['tweets']);
   for ($i=0; $i<$max; $i++)
   {
-    echo "<tr><td>" . $tweets[$i] . "</tr></td>";
+    echo "<tr><td>" . $_SESSION[tweets][$i] . "</tr></td>";
   }
 }
 ?>
