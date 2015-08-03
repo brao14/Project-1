@@ -1,5 +1,6 @@
 <?php
 require_once('graspingtweets.php');
+header("Refresh:180");
 ?>
 
 <!DOCTYPE HTML>
@@ -14,8 +15,6 @@ $tw = tweetReturn();
 if ( array_pop($_SESSION['tweets'])!= $tw ) {
 array_push($_SESSION['tweets'], tweetReturn());
 displayTweet();
-} else {
-  echo "No new tweets" . "<br>";
 }
 ?>
 </table>
