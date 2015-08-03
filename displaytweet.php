@@ -13,7 +13,7 @@ $ts=$_SESSION['tns'];
 
 $tweet=tweetReturn();
 array_push($_SESSION['tns'], $tweet);
-print_r($_SESSION);
+//print_r($_SESSION);
 
 displayTweet();
 

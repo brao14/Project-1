@@ -24,11 +24,12 @@ return $ar;
 
 function displayTweet()
 {
+  session_start();
   $tweets=$_SESSION['tns'];
   $max=sizeof($_SESSION['tns']);
   for ($i=0; $i<$max; $i++)
   {
-    echo $tweets[$i];
+    echo $tweets[$i] . "<br>";
   }
 }
 
