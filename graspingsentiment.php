@@ -23,11 +23,11 @@ return $ar;
 
 function displayTweet()
 {
-  $tweet=$_SESSION['tns'];
+  $tweets=$_SESSION['tns'];
   $max=sizeof($_SESSION['tns']);
   for ($i=0; $i<$max; $i++)
   {
-    echo $ts[$i];
+    echo $tweets[$i];
   }
 }
 
