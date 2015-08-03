@@ -29,7 +29,7 @@ function displayTweet()
   $max=sizeof($_SESSION['tns']);
   for ($i=0; $i<$max; $i++)
   {
-    echo $tweets[$i] . "<br>";
+    echo "<tr><td>" . $tweets[$i] . "</tr></td>";
   }
 }
 
