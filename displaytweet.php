@@ -10,6 +10,7 @@ $ts=$_SESSION['tns'];
 array_push($ts, $tweet);
 print_r($_SESSION);
 echo "Done with arraypush";
+echo $tweet;
 //displaySentiment();
 displayTweet();
 
