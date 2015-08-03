@@ -12,7 +12,7 @@ header("Refresh:180");
 <table>
 <?php
 $tw = tweetReturn();
-if ( array_pop($_SESSION['tweets'])!= $tw ) {
+if ( !in_array($tw , $_SESSION['tweets']) ) {
 array_push($_SESSION['tweets'], tweetReturn());
 }
 displayTweet();
