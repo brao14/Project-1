@@ -11,7 +11,7 @@ require_once('graspingtweets.php');
 <table>
 <?php
 $tw = tweetReturn();
-if ( array_pop($_SESSION['tweets'] != $tw)) {
+if ( array_pop($_SESSION['tweets'])!= $tw ) {
 array_push($_SESSION['tweets'], tweetReturn());
 displayTweet();
 } else {
