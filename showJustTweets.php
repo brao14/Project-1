@@ -1,7 +1,7 @@
 <?php
-session_start();
 require_once('graspingtweets.php');
 ?>
+
 <!DOCTYPE HTML>
 <html>
   <head>
