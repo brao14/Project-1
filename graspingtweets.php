@@ -1,7 +1,10 @@
 <?php
 require_once('TwitterAPIExchange.php');
 session_start();
-$_SESSION['tweets'] = array('test_tweet');
+
+if (empty($_SESSION['tweets])) {
+   $_SESSION['tweets'] = array_push('test_tweet');
+}
 
 
 function tweetReturn() {
@@ -59,6 +62,7 @@ foreach ( $tjd as $k => $v )
 
 function displayTweet()
 {
+  session_start();
   $max=sizeof($_SESSION['tweets']);
   for ($i=0; $i<$max; $i++)
   {
