@@ -6,6 +6,7 @@ $_SESSION['tns'] = array();
 $ts=$_SESSION['tns'];
 //ar=sentimentReturn();
 array_push($ts, sentimentReturn());
+echo "Done with arraypush";
 displayTweet();
 
 

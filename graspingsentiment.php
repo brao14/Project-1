@@ -14,7 +14,7 @@ $result = curl_exec($curl);
 curl_close($curl);
 
 $ar = json_decode($result);
-
+echo "About to return array";
 return $ar;
 }
 
