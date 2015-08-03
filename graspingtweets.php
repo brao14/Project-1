@@ -1,5 +1,9 @@
 <?php
 require_once('TwitterAPIExchange.php');
+session_start();
+$_SESSION['tweets'] = array('test_tweet');
+
+
 function tweetReturn() {
 
 /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
@@ -52,5 +56,14 @@ foreach ( $tjd as $k => $v )
 }
 
 }
-//echo "</table>";
+
+function displayTweet()
+{
+  $tweets=$_SESSION['tns'];
+  $max=sizeof($_SESSION['tns']);
+  for ($i=0; $i<$max; $i++)
+  {
+    echo "<tr><td>" . $tweets[$i] . "</tr></td>";
+  }
+}
 ?>

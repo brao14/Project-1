@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once('graspingtweets.php');
-$_SESSION['tns'] = array('test');
+$_SESSION['tns'] = array('test_tns');
 
 function sentimentReturn()
 {
@@ -17,16 +17,6 @@ curl_close($curl);
 $ar = json_decode($result);
 print_r($ar);
 return $ar;
-}
-
-function displayTweet()
-{
-  $tweets=$_SESSION['tns'];
-  $max=sizeof($_SESSION['tns']);
-  for ($i=0; $i<$max; $i++)
-  {
-    echo "<tr><td>" . $tweets[$i] . "</tr></td>";
-  }
 }
 
 function displaySentiment()
