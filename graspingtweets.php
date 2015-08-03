@@ -2,8 +2,8 @@
 require_once('TwitterAPIExchange.php');
 session_start();
 
-if (empty($_SESSION['tweets])) {
-   $_SESSION['tweets'] = array_push('test_tweet');
+if (empty($_SESSION['tweets'])) {
+   $_SESSION['tweets'] = array('test_tweet');
 }
 
 
