@@ -1,7 +1,6 @@
 <?php
 require_once('graspingtweets.php');
-session_start();
-$_SESSION['tns'] = array();
+
 
 function sentimentReturn()
 {
