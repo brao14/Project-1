@@ -41,7 +41,7 @@ $(document).ready(function() {
              document.location.href = redirect
          });
      });
- })
+ });
  $(document).ready(function(){
    $('.clubdropdown').click(function(){
      $('.clubscontent').slideToggle("slow")
