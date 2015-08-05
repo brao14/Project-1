@@ -526,9 +526,15 @@ a
   margin-left: 40px;
   vertical-align: top;
 }
+.apis
+{
+  text-align: left;
+  display: inline-block;
+  margin-left: 40px;
+  vertical-align: top;
+}
 .skills
 {
   text-align: center;
   margin-right: 0;
-
 }
