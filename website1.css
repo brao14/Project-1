@@ -45,7 +45,7 @@ p
   /*border-style: solid;
   border-color: black; */
   background-color: #CCCEA9;
-  height: 400px;
+  height: 450px;
   float: left;
   width: 175px;
   margin-left: 0px;
@@ -61,6 +61,14 @@ p
   border-radius: 25px;
 }
 .musichome
+{
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin-top: 0px;
+  border-radius: 25px;
+}
+.projecthome
 {
   height: 100px;
   width: 100px;
@@ -153,6 +161,7 @@ a
 .instruments
 {
     text-align: left;
+    margin-top: 50px;
 }
 .instrumentsheading
 {
@@ -537,4 +546,14 @@ a
 {
   text-align: center;
   margin-right: 0;
+}
+.projectmain
+{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 32px;
+  margin-right: 575px;
+  line-height: 150%;
+  float-left: 100px;
+
 }
