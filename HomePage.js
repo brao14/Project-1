@@ -15,21 +15,11 @@ $(document).ready(function() {
            "color":"hotpink"
        });
     });
-   $('li').mouseenter(function(){
-       $(this).animate({
-           height: '+=10px'
-       });
-    });
    $('a').mouseleave(function() {
        $(this).css({
            "color":"black"
        });
     });
-   $('li').mouseleave(function() {
-       $(this).animate({
-            height: '-=10px'
-       });
-   });
   // to fade in on page load
      $("body").css("display", "none");
      $("body").fadeIn(400);
